@@ -1,0 +1,21 @@
+<mvc:View
+  controllerName="org.odata2ts.trippin.example-page.ExamplePage"
+  displayBlock="true"
+  xmlns="sap.f.semantic"
+  xmlns:m="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+>
+  <SemanticPage>
+    <titleHeading>
+      <m:VBox>
+        <m:Title text="{i18n>appTitle}" />
+      </m:VBox>
+    </titleHeading>
+    <headerContent>
+      <m:Text text="Hi there!" />
+    </headerContent>
+    <content>
+      <m:Text text="Content area" />
+    </content>
+  </SemanticPage>
+</mvc:View>

@@ -1,0 +1,32 @@
+{
+  "name": "ui5-circular-dep",
+  "version": "1.0.0",
+  "description": "UI5 Application demonstrating usage of circular deps",
+  "author": "texttechne",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "ui5 build --clean-dest",
+    "build:opt": "ui5 build self-contained --clean-dest --all",
+    "start": "ui5 serve --port 8080 -o index.html",
+    "start:dist": "ui5 serve  --port 8080 -o index.html --config ui5-dist.yaml",
+    "ts-typecheck": "tsc --noEmit",
+    "lint": "eslint webapp"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "@openui5/ts-types-esm": "1.117.0",
+    "@prettier/plugin-xml": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "@ui5/cli": "^3.4.0",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "prettier-plugin-packagejson": "^2.4.5",
+    "prettier-plugin-properties": "^0.2.0",
+    "typescript": "^5.1.6",
+    "ui5-middleware-livereload": "^3.0.0",
+    "ui5-tooling-modules": "^3.0.4",
+    "ui5-tooling-transpile": "^3.0.3"
+  }
+}
